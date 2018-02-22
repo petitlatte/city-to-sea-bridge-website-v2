@@ -44,7 +44,7 @@ hr{
     z-index: 9999;
     width: 50px;
     height: 50px;
-    font-size:35px;
+    font-size:40px;
     text-align: center;
     background: var(--main-color);
     color: white;
@@ -94,7 +94,7 @@ hr{
 	height:80vh;
 }
 
-#boldtext p{
+#boldtext{
 	font-weight: bold;
   	font-style: oblique;
 }
@@ -103,6 +103,7 @@ hr{
 
 .conC{
 	display:flex;
+	align-items: center;
 	background-image: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.9)),url("../img/bridge001.jpg");
 	background-position:center;
 	background-size: cover;
@@ -117,10 +118,9 @@ hr{
 	margin-left:auto;
 	margin-right:auto;
 	line-height: 1.5;
-	margin-bottom: 60px;
 }
 
-.conC .container p{
+.conC .text{
 	float:left;
 	width:50%;
 }
@@ -133,6 +133,13 @@ border-radius: 50%;
 
 /**********CONTENT (container D CSS)**********/
 
+.conD{
+	height:100vh;
+	min-height:450px;
+	display:flex;
+	align-items: center;
+}
+
 .conD .container {
 	max-width: var(--max-width);
 	max-width: 1200px;
@@ -140,10 +147,9 @@ border-radius: 50%;
 	margin-right:auto;
 	line-height: 1.5;
 	margin-bottom: 60px;
-	height: 100vh;
 }
 
-.conD .container p{
+.conD .text{
 	float:right;
 	width:50%;
 }
