@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+:root{
+	--main-color: #ff4930;
+	--max-width:1200px;
+}
+
+/********** GLOBAL CSS***********/
+
+body{
+	margin:0;
+	padding:0;
+	font-family: "Roboto",sans-serif;
+	font-weight: 100;
+	background-image: url("../img/background.png");
+}
+
+h2{
+	margin-bottom:0;
+	font-size: 32px;
+	font-weight: 100;
+	font-size: 32px;
+    font-family: "Roboto",sans-serif;
+}
+
+h3{
+font-weight: 100;
+  font-size: 22px;
+  color: var(--main-color);
+  color: #ff4930;
+  margin-top:0;
+}
+
+hr{
+	width:70%;
+}
+
+
+/*BACK TO TOP PAGE CSS */
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    font-size:35px;
+    text-align: center;
+    background: var(--main-color);
+    color: white;
+    cursor: pointer;
+    border: 0;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+#back-to-top:hover {
+    background: #333333;
+}
+#back-to-top.show {
+    opacity: 1;
+}
+
+/***********HEADER (container A CSS)**********/
+
+.conA{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)),url("../img/header.jpg");
+	background-position:center;
+	background-size: cover;
+	background-attachment: fixed;
+	height:55vh;
+	min-height:450px;
+	text-align: center;
+}
+
+.conA img{
+	width:100%;
+}
+
+/**********CONTENT (container B CSS)**********/
+
+.conB .container{
+	max-width: var(--max-width);
+	max-width: 1200px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	line-height: 1.5;
+	margin-bottom: 60px;
+	height:80vh;
+}
+
+#boldtext p{
+	font-weight: bold;
+  	font-style: oblique;
+}
+
+/**********CONTENT (container C CSS)**********/
+
+.conC{
+	display:flex;
+	background-image: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.9)),url("../img/bridge001.jpg");
+	background-position:center;
+	background-size: cover;
+	background-attachment: fixed;
+	height:100vh;
+	min-height:450px;
+}
+
+.conC .container{
+	max-width: var(--max-width);
+	max-width: 1200px;
+	margin-left:auto;
+	margin-right:auto;
+	line-height: 1.5;
+	margin-bottom: 60px;
+}
+
+.conC .container p{
+	float:left;
+	width:50%;
+}
+.conC .container img{
+	display:inline-block;
+border-radius: 50%;
+	float:right;
+	width:40%;
+}
+
+/**********CONTENT (container D CSS)**********/
+
+.conD .container {
+	max-width: var(--max-width);
+	max-width: 1200px;
+	margin-left:auto;
+	margin-right:auto;
+	line-height: 1.5;
+	margin-bottom: 60px;
+	height: 100vh;
+}
+
+.conD .container p{
+	float:right;
+	width:50%;
+}
+.conD .container img{
+display:inline-block;
+border-radius: 50%;
+	float:left;
+	width:40%;
+}
+
+/**********CONTENT (map location CSS)**********/
+
+.location {
+	background-color: white;
+	padding-bottom: 30px;
+
+}
+.location iframe{
+	width:100%;
+	height:500px;
+	vertical-align: bottom;
+}
+
+.location h2{
+	text-align: center;
+}
+
+.location h3{
+	text-align: center;
+}
+
+.footer {
+	display:flex;
+	max-width: 1200px;
+	max-width: var(--max-width);
+	height:150px;
+
+}
+
+/**********FOOTER (footer CSS)**********/
+
+.footer img{
+	width:20%;
+		align-items: center;
+}
+
+.socialicons {
+	position:absolute;
+	right:0;
+	align-items: top;
+}
+
+.footer ul{
+	display:flex;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.footer a{
+	display:block;
+	margin-right: 18px;
+	padding:0;
+	color:inherit;
+	font-size: 30px;
+	text-decoration: none;
+	text-align: center;
+}
