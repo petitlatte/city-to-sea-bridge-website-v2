@@ -36,7 +36,7 @@ hr{
 }
 
 
-/*BACK TO TOP PAGE CSS */
+/*BACK TO TOP PAGE BUTTON CSS */
 #back-to-top {
     position: fixed;
     bottom: 40px;
@@ -61,6 +61,38 @@ hr{
 #back-to-top.show {
     opacity: 1;
 }
+
+/*********** NAVBAR CSS ***********/
+
+#navbar {
+    background-color: rgba(255,255,255,0.8);
+    position: fixed;
+    top: -60px; 
+    width: 100%; 
+    transition: top 0.3s;
+    box-shadow:1px 2px 3px #888888;
+}
+
+#navbar img{
+	float:left;
+}
+
+#navbar a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #333333;
+    color: white;
+    transition: 1s ease;
+}
+
+
 
 /***********HEADER (container A CSS)**********/
 

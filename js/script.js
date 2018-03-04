@@ -1,3 +1,6 @@
+
+//BACK TO TOP BUTTON FUNCTION
+
 if ($('#back-to-top').length) {
     var scrollTrigger = 100, // px
         backToTop = function () {
@@ -18,4 +21,16 @@ if ($('#back-to-top').length) {
             scrollTop: 0
         }, 700);
     });
+}
+
+// SCROLL NAVBAR FUNCTION
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-60px";
+  }
 }
