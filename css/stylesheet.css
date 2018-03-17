@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-:root{
-	--main-color: #ff4930;
-	--max-width:1200px;
-}
-
 /********** GLOBAL CSS***********/
 
 body{
@@ -26,7 +21,6 @@ h2{
 h3{
 font-weight: 100;
   font-size: 22px;
-  color: var(--main-color);
   color: #ff4930;
   margin-top:0;
 }
@@ -46,7 +40,7 @@ hr{
     height: 50px;
     font-size:40px;
     text-align: center;
-    background: var(--main-color);
+    background: #ff4930;
     color: white;
     cursor: pointer;
     border: 0;
@@ -56,7 +50,7 @@ hr{
     opacity: 0;
 }
 #back-to-top:hover {
-    background: #333333;
+    background-color: #333333;
 }
 #back-to-top.show {
     opacity: 1;
@@ -70,7 +64,7 @@ hr{
     top: -60px; 
     width: 100%; 
     transition: top 0.3s;
-    box-shadow:1px 2px 3px #888888;
+    box-shadow:1px 2px 3px #999999;
 }
 
 #navbar img{
@@ -78,6 +72,7 @@ hr{
 }
 
 #navbar a {
+	cursor:pointer;
     float: right;
     display: block;
     color: black;
@@ -116,14 +111,13 @@ hr{
 /**********CONTENT (container B CSS)**********/
 
 .conB .container{
-	max-width: var(--max-width);
 	max-width: 1200px;
 	margin-left:auto;
 	margin-right:auto;
 	text-align: center;
 	line-height: 1.5;
-	margin-bottom: 60px;
-	height:80vh;
+	height:auto;
+	padding:30px 30px 60px 30px;
 }
 
 #boldtext{
@@ -140,12 +134,12 @@ hr{
 	background-position:center;
 	background-size: cover;
 	background-attachment: fixed;
-	height:100vh;
+	height:auto;
 	min-height:450px;
 }
 
 .conC .container{
-	max-width: var(--max-width);
+	padding:30px;
 	max-width: 1200px;
 	margin-left:auto;
 	margin-right:auto;
@@ -166,18 +160,18 @@ border-radius: 50%;
 /**********CONTENT (container D CSS)**********/
 
 .conD{
-	height:100vh;
+	height:auto;
 	min-height:450px;
 	display:flex;
 	align-items: center;
 }
 
 .conD .container {
-	max-width: var(--max-width);
 	max-width: 1200px;
 	margin-left:auto;
 	margin-right:auto;
 	line-height: 1.5;
+	padding:30px;
 }
 
 .conD .text{
@@ -215,7 +209,6 @@ border-radius: 50%;
 .footer {
 	display:flex;
 	max-width: 1200px;
-	max-width: var(--max-width);
 	height:150px;
 
 }
@@ -230,7 +223,6 @@ border-radius: 50%;
 .socialicons {
 	position:absolute;
 	right:0;
-	align-items: top;
 }
 
 .footer ul{
@@ -248,4 +240,49 @@ border-radius: 50%;
 	font-size: 30px;
 	text-decoration: none;
 	text-align: center;
+}
+
+@media screen and (max-width:768px){
+
+
+	#navbar{
+		display:none;
+	}
+
+	.conC .container img{
+		display: none;
+
+	}
+
+	.conD .container img{
+	display:none;
+	}
+
+	.conB .text{
+		text-align: left;
+		width:100%;
+		font-size:20px;
+	}
+	
+	.conC .text{
+		text-align: left;
+		width:100%;
+		font-size:20px;
+	}
+
+	.conD .text{
+	text-align: left;
+	width:100%;
+	font-size:20px;
+	}
+
+	footer img {
+		display:none;
+	}
+
+	footer .socialicons {
+		left:0;
+		padding:10px;
+	}
+
 }

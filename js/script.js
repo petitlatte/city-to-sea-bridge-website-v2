@@ -1,3 +1,24 @@
+$(".story").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".conB").offset().top},
+        'slow');
+});
+
+$(".bridge").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".conC").offset().top},
+        'slow');
+});
+
+$(".artist").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".conD").offset().top},
+        'slow');
+});
+
+
+
+
 
 //BACK TO TOP BUTTON FUNCTION
 
